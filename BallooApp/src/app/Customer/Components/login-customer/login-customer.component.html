@@ -1,0 +1,23 @@
+    <div class="container">
+        <div class="form">
+            <h1><img src="../../../../assets/Images/SmallLogo.jpg"></h1>
+            <article>Login</article>
+            <form #loginForm="ngForm" (ngSubmit)="login()">
+                <div class="form-element">
+                    <div class="text-element1">Email: </div>
+                    <div class="text-element">
+                          <input type="text" [(ngModel)]="UserLogin.email">
+                    </div>
+                </div>
+                <div class="form-element">
+                      <div class="text-element1">Password: </div>
+                      <div class="text-element">
+                        <input type="password" [(ngModel)]="UserLogin.email">
+                      </div>
+                </div>
+                <div class="form-element3 text-element">
+                <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>

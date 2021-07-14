@@ -1,0 +1,82 @@
+<div class="container">
+   <section class="forms">
+     <h1><img src="../../../../assets/Images/SmallLogo.jpg"></h1>
+     <h1 style="text-decoration: overline;">Join Us</h1>
+     <form [formGroup]="userRegistration" (onSubmit)="onSubmit(userRegistration)">
+       <div class="form-element">
+         <label>Name :</label>
+         <div class="text-element">
+          <input type="text" formControlName="name" required>
+                 <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+                     <div *ngIf="name.errors.required">
+                       Name is required
+                     </div>
+                     <div *ngIf="name.errors.minlength">
+                       Name must be upto 6 characters
+                     </div>
+                 </div>
+         </div>
+       </div>
+       <div class="form-element">
+        <label>Email :</label>
+        <div class="text-element">
+         <input type="text" formControlName="email" required>
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+                    <div *ngIf="email.errors.required">
+                      Email is required
+                    </div>
+                    <div *ngIf="email.errors.email">
+                      Email Pattern required
+                    </div>
+                </div>
+        </div>
+      </div>
+      <div class="form-element">
+        <label>Password :</label>
+        <div class="text-element">
+         <input type="password" formControlName="password" required>
+                <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+                    <div *ngIf="password.errors.required">
+                      Password is required
+                    </div>
+                    <div *ngIf="password.errors.minlength">
+                      Password must be upto 6 characters
+                    </div>
+                </div>
+        </div>
+      </div>
+      <div class="form-element">
+        <label>Age :</label>
+        <div class="text-element">
+         <input type="text" formControlName="age" required>
+                <div *ngIf="age.invalid && (age.dirty || age.touched)" class="error">
+                    <div *ngIf="age.errors.required">
+                      Age is required
+                    </div>
+                    <div *ngIf="age.errors.maxlength">
+                       Should be less than 3 digits
+                    </div>
+                </div>
+        </div>
+        <div class="form-element">
+          <label>Gender :</label>
+          <div class="text-element">
+          <select formControlName="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+          </select>
+          <div *ngIf="gender.invalid && (gender.dirty || gender.touched)" class="error">
+            <div *ngIf="gender.errors.required">
+              Gender should be selected
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-element" style="padding-top:0.8rem;">
+           <button type="submit">Register</button>
+      </div>
+     </form>
+   </section>
+</div>

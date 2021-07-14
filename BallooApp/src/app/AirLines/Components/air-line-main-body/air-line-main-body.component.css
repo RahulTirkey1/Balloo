@@ -1,0 +1,23 @@
+.container
+{
+    margin:1rem auto;
+    max-width:900px;
+    width:90%;
+}
+
+article{
+    margin:1rem 0;
+    
+}
+
+article a img{
+    width:100%; 
+    position:relative
+}
+aside{
+    text-align:center;
+    font-size: xx-large;
+    color:royalblue;
+    
+}
+

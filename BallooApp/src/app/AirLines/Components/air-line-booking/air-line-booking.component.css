@@ -1,0 +1,391 @@
+.container
+{
+    margin:1.5rem auto;
+    width:90%;
+    max-width:1000px;
+}
+/* AirPlane Design section */
+/*.plane-display
+{
+    display:flex;
+}
+{
+    border-radius: 100% 0 0 100% / 50%;
+     max-width:9rem;
+     width:90%;
+     height: 138px;
+     background-color: thistle;
+} */
+.seat-display
+{
+  /*  transform:translate(40px,50px);   */
+    background-color: violet;
+    width:auto;  
+    padding:0.6rem 0.6rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+/*.seat-row
+{
+    display:flex;
+} */
+.upper-col
+{
+    display:flex;
+    flex-direction: column;
+    margin:auto auto;
+}
+.seats{
+     background-color: aquamarine;
+     height:2.5rem;
+     width:2.5rem;
+     text-align:center;
+     margin:0.2rem 0.2rem;
+}
+button span
+{
+    color:red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+.seat-space
+{
+    margin:0 1rem;
+}
+.walk-space
+{
+    padding-top:1.5rem;
+}
+.seats:hover
+{
+    background-color: chartreuse;
+    color:crimson;
+} 
+
+/* Forms Sections   */
+
+.forms
+{
+ /*   transform:translate(95px,30px);  */
+    margin:2rem auto;
+    padding:2rem 2rem;
+    background-color:thistle;
+}
+.form-priority
+{
+    display:flex;
+}
+.form-priority1
+{
+margin:1rem auto;
+text-align: center;
+}
+.form-priority2
+{
+    color:darkblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1.5rem;
+}
+.form-priority3
+{
+    width:auto;
+    text-decoration: none;
+    background-color: lightblue;
+}
+select{
+    max-width:20rem;
+    font-size:large;
+}
+input[type="date"]
+{
+    width:9.3rem;
+    color:teal;
+    font-size:1rem;
+}
+input[type="text"]
+{
+    height:1.5rem;
+}
+option
+{
+    background-color:lightblue;
+}
+.form-priority4
+{
+    font-size: large;
+}
+
+.form-priority5
+{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+    justify-items: center;
+    align-items: center;
+}
+.form-element
+{
+    margin:0.4rem 0; 
+    width:auto;
+}
+.person-list
+{
+    color:crimson;
+    font-size: x-large;
+    font-weight:700;
+    text-align: center;
+}
+.button-element1
+{
+  /*  transform:translate(10px,0); */
+    height:2rem;
+    width:8rem;
+    font-size: large;
+    color:white;
+    border-radius:3rem;
+    text-decoration: none;
+}
+/*.form-array
+{
+    padding-left:20px;
+} */
+.form-element1
+{
+    font-size:medium;
+    
+} 
+.form-element2
+{
+    font-size:medium;
+    font-weight:600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rebeccapurple;
+    display:inline-block;
+}
+.form-element21
+{
+    padding-right:14px;
+}
+.form-element22
+{
+    padding-right:28px;
+}
+.form-element23
+{
+    padding-right:5px;
+}
+.form-element4
+{
+    height:1.5rem;
+    width:9.4rem;
+}
+.form-element3{
+height:2em;
+width:3rem;
+background-color:mediumvioletred;
+transform:translate(0.5rem,0);
+color:cornsilk;
+font-size:small;
+font-weight:600;
+text-align: center;
+}
+.form-element5
+{
+    background-color:crimson;
+    height:2rem;
+    width:5rem;
+    font-size:1rem;
+    color:white;
+}
+
+.book-button
+{
+    display:flex;
+    justify-content: center;
+    margin:0.4rem 0;
+} 
+.book-button1
+{
+    background-color: red;
+    color:aliceblue;
+    font-size:large;
+    width:100px;
+    height:40px;
+}
+/* Form Validations */
+.error{
+   color:red;
+   font-size: larger;
+}
+.result-display
+{
+    transform:translate(0,50px);
+}
+
+/* Size Changes */
+@media(min-width:700px) and (max-width:840px)
+{
+    .seats{
+        background-color: aquamarine;
+        height:2rem;
+        width:2rem;
+        text-align:center;
+        margin:0.2rem 0.2rem;
+   }
+
+   button span
+{
+    color:red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+}
+}
+
+@media(min-width:629px) and  (max-width:699px)
+{
+    .seats{
+        background-color: aquamarine;
+        height:2rem;
+        width:1.77rem;
+        text-align:center;
+        margin:0.2rem 0.2rem;
+   }
+
+   button span
+{
+    color:red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.form-element2
+{
+    width:100%;
+    
+}
+}
+
+ @media(min-width:398px) and (max-width:628px)
+{
+    .seat-display
+    {
+     background-color:initial;
+    width:auto;  
+    padding:0.6rem 0.6rem;
+    display:initial;
+    }
+
+    .upper-col
+    {  display:flex;
+        background-color: violet;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        margin:auto auto;
+    }
+   
+    .seat-space
+    {
+        margin:0 0;
+    }
+    .walk-space
+    {
+        margin:0 10%;
+    }
+    .form-element2
+    {
+    width:100%;
+     }
+
+     .form-priority
+     {
+         display:flex;
+         flex-direction: column;
+     }
+
+     .form-priority5
+{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:1rem;
+    justify-items: center;
+    align-items: center;
+}
+   .form-priority6
+   {
+       padding-right: 4rem;
+   }
+   .form-priority7
+   {
+       padding-right: 3rem;
+   }
+}  
+@media(max-width:397px)
+{
+
+    .seat-display
+    {
+     background-color:initial;
+    width:auto;  
+    padding:0.6rem 0.6rem;
+    display:initial;
+    }
+
+    .upper-col
+    {  display:flex;
+        background-color: violet;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        margin:auto auto;
+    }
+   
+    .seat-space
+    {
+        margin:0 0;
+    }
+    .walk-space
+    {
+        margin:0 10%;
+    }
+    .form-element2
+    {
+    width:100%;
+     }
+
+     .form-priority
+     {
+         display:flex;
+         flex-direction: column;
+     }
+
+     .form-priority5
+{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-priority2,select,.form-priority4
+{
+ width:100%;
+}
+
+.form-priority6
+   {
+       padding-right: 4rem;
+   }
+   .form-priority7
+   {
+       padding-right: 3rem;
+   }
+}

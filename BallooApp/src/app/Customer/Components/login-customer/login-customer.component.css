@@ -1,0 +1,57 @@
+.container
+{
+    margin:1.5rem auto;
+    width:90%;
+    max-width:1300px;
+    justify-items: center;
+}
+.form{
+   
+    padding:3rem 2rem;
+    color:white;
+    background:url(../../../../assets/Images/customer-background.jpg);
+}
+h1{
+    text-align: center;
+}
+article
+{
+    font-size: xx-large;
+    text-align: center;
+    color:oldlace;
+    font-weight: 800;
+    padding-top:1.5rem;
+    text-decoration:overline;
+}
+input[type=text],input[type=password]
+{
+    font-size: medium;
+    font-weight: 600;
+}
+.form-element
+{
+   margin:1rem auto;
+}
+
+.text-element,.text-element1
+{
+    text-align: center;
+}
+.text-element1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+button{
+    margin: 0 auto;
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    background-color: red;
+    color:white;
+    width:8rem;
+    border-radius: 1rem;
+}
+.form-element3
+{
+    padding-top:1rem;
+}
